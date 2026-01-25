@@ -54,29 +54,57 @@ The device combines RF communication, local data storage, and a physical control
 
 ---
 
-### 🧪 Repository Structure
+## 🧪 Repository Structure
 
-hardware/   -> PCB, schematic, BOM, and manufacturing files
-firmware/   -> ESP32 firmware source code (PlatformIO)
-docs/       -> Technical documentation and guides
-examples/   -> Module-level test programs
+1. **hardware/**  
+   PCB, schematic, BOM, and manufacturing files  
+
+2. **firmware/**  
+   ESP32 firmware source code (Arduino / PlatformIO)  
+
+3. **docs/**  
+   Technical documentation and guides  
+
+4. **examples/**  
+   Module-level test programs  
 
 ---
-### 🤝 Contributing
 
-Contributions are welcome.
+## 🧩 Schematic & PCB Design
+
+All hardware design files are located in the `Schematic/` directory.
+
+### 1. Schematic
+- 📄 **ESP32 + CC1101 Schematic**  
+  [`Schematic_PCB-ALEEVA-WROOM_2024-09-19.pdf`](Schematic/Schematic_PCB-ALEEVA-WROOM_2024-09-19.pdf)
+
+### 2. PCB Layout Images
+- 🖼️ **Top Layer**  
+  [`1.Layout.png`](Schematic/1.Layout.png)
+
+- 🖼️ **Bottom Layer**  
+  [`2.Bottom.png`](Schematic/2.Bottom.png)
+
+- 🖼️ **Routing / Reference View**  
+  [`3.png`](Schematic/3.png)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.  
 If you have ideas for improvements, feature requests, or bug reports, please open an issue or submit a pull request.
 
 ---
 
-📄 License
+## 📄 License
 
-Distributed under the MIT License.
-See the LICENSE file for more information.
+Distributed under the MIT License.  
+See the `LICENSE` file for more information.
 
 ---
 
-🙏 Acknowledgements & References
+## 🙏 Acknowledgements & References
 
 This project builds upon open-source libraries, community research, and publicly available technical documentation:
 
@@ -98,7 +126,4 @@ This project builds upon open-source libraries, community research, and publicly
 6. **Texas Instruments CC1101 Datasheet**  
    https://www.ti.com/lit/ds/symlink/cc1101.pdf  
 
-
 Special thanks to the open-source community and researchers whose work enables experimentation and learning in embedded RF systems.
-
----
