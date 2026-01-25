@@ -55,55 +55,41 @@ The device combines RF communication, local data storage, and a physical control
 ---
 
 ## 🧪 Repository Structure
+
 ```text
-hardware/   -> PCB, schematic, and manufacturing files
+hardware/   -> PCB, schematic, BOM, and manufacturing files
 firmware/   -> ESP32 firmware source code (PlatformIO)
 docs/       -> Technical documentation and guides
 examples/   -> Module-level test programs
 
-🤝 Contributing
-Contributions are welcome.
+## 🤝 Contributing
 
-If you have ideas for improvements, feature requests, or bug reports, please open an issue or submit a pull request through GitHub.
-All contributions should follow clean coding practices and include clear documentation where applicable
+Contributions are welcome.  
+If you have ideas for improvements, feature requests, or bug reports, please open an issue or submit a pull request.
 
-📄 License
-This project is released under the MIT License.
-You are free to use, modify, and distribute this project in accordance with the terms of the license.
+## 📄 License
 
-See the LICENSE file for more information.
-
+Distributed under the MIT License.  
+See the `LICENSE` file for more information.
 
 ## 🙏 Acknowledgements & References
 
-This project builds upon open-source libraries, community research, and publicly available technical documentation, including:
+This project builds upon open-source libraries, community research, and publicly available technical documentation:
 
-### Libraries & Frameworks
 - **U8g2 OLED Library**  
-  https://github.com/olikraus/u8g2  
+  https://github.com/olikraus/u8g2
 
-- **Adafruit GFX & SSD1306 Libraries**  
+- **Adafruit GFX & SSD1306**  
   https://github.com/adafruit/Adafruit-GFX-Library  
-  https://github.com/adafruit/Adafruit_SSD1306  
+  https://github.com/adafruit/Adafruit_SSD1306
 
-- **rc-switch (OOK/ASK RF protocol reference)**  
-  https://github.com/sui77/rc-switch  
+- **rc-switch (OOK/ASK RF reference)**  
+  https://github.com/sui77/rc-switch
 
-### CC1101 References
 - **SmartRC CC1101 Driver Library**  
-  https://github.com/LSatan/SmartRC-CC1101-Driver-Lib  
-
-- **ELECHOUSE CC1101 Library**  
-  https://github.com/ELECHOUSE/CC1101  
+  https://github.com/LSatan/SmartRC-CC1101-Driver-Lib
 
 - **Texas Instruments CC1101 Datasheet**  
   https://www.ti.com/lit/ds/symlink/cc1101.pdf  
-
-- **TI Application Notes (SWRA / AN series)**  
-  https://www.ti.com/tool/CC1101  
-
-### Ecosystem
-- **ESP32 Open-Source Ecosystem**  
-  https://github.com/espressif  
 
 Special thanks to the open-source community and researchers whose work enables experimentation and learning in embedded RF systems.
