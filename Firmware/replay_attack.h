@@ -1,8 +1,3 @@
-/* ____________________________
-   This software is licensed under the MIT License:
-   https://github.com/cifertech/Daeva
-   ________________________________________ */
-
 #ifndef replay_attack_H
 #define replay_attack_H
 
@@ -17,3 +12,4 @@ void rpattackSetup();
 void rpattackLoop();
 
 #endif
+
