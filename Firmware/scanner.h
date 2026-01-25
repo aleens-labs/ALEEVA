@@ -1,8 +1,3 @@
-/* ____________________________
-   This software is licensed under the MIT License:
-   https://github.com/cifertech/Daeva
-   ________________________________________ */
-
 #ifndef scanner_H
 #define scanner_H
 
@@ -16,3 +11,4 @@ void scannerSetup();
 void scannerLoop();
 
 #endif
+
