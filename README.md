@@ -54,42 +54,51 @@ The device combines RF communication, local data storage, and a physical control
 
 ---
 
-## 🧪 Repository Structure
+### 🧪 Repository Structure
 
-```text
 hardware/   -> PCB, schematic, BOM, and manufacturing files
 firmware/   -> ESP32 firmware source code (PlatformIO)
 docs/       -> Technical documentation and guides
 examples/   -> Module-level test programs
 
-## 🤝 Contributing
+---
+### 🤝 Contributing
 
-Contributions are welcome.  
+Contributions are welcome.
 If you have ideas for improvements, feature requests, or bug reports, please open an issue or submit a pull request.
 
-## 📄 License
+---
 
-Distributed under the MIT License.  
-See the `LICENSE` file for more information.
+📄 License
 
-## 🙏 Acknowledgements & References
+Distributed under the MIT License.
+See the LICENSE file for more information.
+
+---
+
+🙏 Acknowledgements & References
 
 This project builds upon open-source libraries, community research, and publicly available technical documentation:
 
-- **U8g2 OLED Library**  
-  https://github.com/olikraus/u8g2
+1. **U8g2 OLED Library**  
+   https://github.com/olikraus/u8g2  
 
-- **Adafruit GFX & SSD1306**  
-  https://github.com/adafruit/Adafruit-GFX-Library  
-  https://github.com/adafruit/Adafruit_SSD1306
+2. **Adafruit GFX Library**  
+   https://github.com/adafruit/Adafruit-GFX-Library  
 
-- **rc-switch (OOK/ASK RF reference)**  
-  https://github.com/sui77/rc-switch
+3. **Adafruit SSD1306 Library**  
+   https://github.com/adafruit/Adafruit_SSD1306  
 
-- **SmartRC CC1101 Driver Library**  
-  https://github.com/LSatan/SmartRC-CC1101-Driver-Lib
+4. **rc-switch (OOK/ASK RF Reference)**  
+   https://github.com/sui77/rc-switch  
 
-- **Texas Instruments CC1101 Datasheet**  
-  https://www.ti.com/lit/ds/symlink/cc1101.pdf  
+5. **SmartRC CC1101 Driver Library**  
+   https://github.com/LSatan/SmartRC-CC1101-Driver-Lib  
+
+6. **Texas Instruments CC1101 Datasheet**  
+   https://www.ti.com/lit/ds/symlink/cc1101.pdf  
+
 
 Special thanks to the open-source community and researchers whose work enables experimentation and learning in embedded RF systems.
+
+---
