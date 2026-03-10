@@ -59,22 +59,19 @@ void rpattackSetup() {
 }
 
 void rpattackLoop() {
-    Serial.println("Loop started"); // Menunjukkan bahwa loop berjalan
+    Serial.println("Loop started"); 
 
-    // Cek jika tombol ditekan
     if (digitalRead(BUTTON_PIN) == LOW) {
-        delay(50); // Debounce delay
-        if (digitalRead(BUTTON_PIN) == LOW) { // Cek tombol masih ditekan
-            Serial.println("Button Pressed"); // Menunjukkan tombol ditekan
-            
-            // Ganti frekuensi ke yang berikutnya
+        delay(50); 
+        if (digitalRead(BUTTON_PIN) == LOW) { 
+            Serial.println("Button Pressed"); 
+        
             currentFrequencyIndex = (currentFrequencyIndex + 1) % (sizeof(subghz_frequency_list) / sizeof(subghz_frequency_list[0]));
             ELECHOUSE_cc1101.setMHZ(subghz_frequency_list[currentFrequencyIndex] / 1000000.0);
             
             Serial.print("Current Frequency: ");
             Serial.println(subghz_frequency_list[currentFrequencyIndex] / 1000000.0);
             
-            // Tampilkan frekuensi baru di layar
             u8g2.clearBuffer();
             u8g2.setCursor(0, 10);
             u8g2.print("Freq:");
@@ -83,16 +80,16 @@ void rpattackLoop() {
             u8g2.print(" MHz");
             u8g2.sendBuffer();
             
-            // Tunggu sampai tombol dilepas
+    
             while (digitalRead(BUTTON_PIN) == LOW) {
-                // Menunggu tombol dilepas
+             
             }
-            delay(50); // Debounce delay setelah tombol dilepas
+            delay(50); 
         }
     }
 
     if (mySwitch.available()) {
-        Serial.println("Received Value Available"); // Menunjukkan nilai tersedia
+        Serial.println("Received Value Available"); 
         
         receivedValue = mySwitch.getReceivedValue(); 
         receivedBitLength = mySwitch.getReceivedBitlength(); 
@@ -116,7 +113,7 @@ void rpattackLoop() {
     }
 
     if (digitalRead(BUTTON_PIN) == LOW && receivedValue != 0) { 
-        Serial.println("Sending Value..."); // Menunjukkan bahwa proses pengiriman dimulai
+        Serial.println("Sending Value..."); 
         
         mySwitch.disableReceive(); 
         delay(100);
@@ -151,3 +148,4 @@ void rpattackLoop() {
         mySwitch.enableReceive(RX_PIN); 
     }  
 }
+
