@@ -1,6 +1,6 @@
 /* ____________________________
    This software is licensed under the MIT License:
-   https://github.com/cifertech/Daeva
+   https://github.com/aleens-labs/ALEEVA
    ________________________________________ */
 
 // 'logo oled', 128x64px
@@ -141,3 +141,4 @@ const unsigned char bitmap_item_sel_outline [] PROGMEM = {
   0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x07, 0xF8, 0xFF, 0xFF, 0xFF, 
   0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x03, 
   };
+
